@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    height: 550px;
+}
+
+.swiper {
+    background-color: #e1dada;
+    padding: 10px;
+    width: 90%;
+}
+/* .swiper-wrapper{
+    overflow-x: hidden;
+    border: 2px solid black;
+} */
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* background-color: #bfbfbf; */
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 350px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 253, 253);
+    border-radius: 20px;
+}
+.image-content{
+    position: relative;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.overlay{
+    background-color: #4070F4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    /* border: 2px solid black; */
+}
+
+.image{
+    position: relative;
+    margin: auto;
+    height: 200px;
+    width: 150px;
+    border: 3px solid white;
+    border-radius: 11%;
+}
+.img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid #4070F4;
+}
+
+.name{
+    font-weight: 600;
+}
+.description{
+    font-size: small;
+    color: #707070;
+}
+.button{
+    background-color: #4070F4;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    color: #fff;
+}
+.button:hover{
+    background-color: #265DF2;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    padding: 10px;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+
+@media screen and (max-width:768px ) {
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none;
+    }
+}
